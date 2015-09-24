@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<application xmlns="http://ns.adobe.com/air/application/4.0">
+  <id>com.Amidos.AtomicPlus</id>
+  <versionNumber>1.0.2</versionNumber>
+  <supportedProfiles>mobileDevice</supportedProfiles>
+  <filename>AtomicPlus</filename>
+  <name>Atomic+</name>
+  <description>Collect, Avoid, Survive</description>
+  <copyright>Copyrights © 2013 Amidos</copyright>
+  <android>
+    <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch" />
+</manifest>]]></manifestAdditions>
+  </android>
+  <iPhone>
+    <InfoAdditions><![CDATA[<key>UIStatusBarStyle</key>
+<string>UIStatusBarStyleBlackOpaque</string>
+<key>UIRequiresPersistentWiFi</key>
+<string>NO</string>
+<key>UIRequiredDeviceCapabilities</key>
+<array>
+	<string>front-facing-camera</string>
+</array>
+<key>UIPrerenderedIcon</key>
+<true />
+<key>UIApplicationExitsOnSuspend</key>
+<false />
+<key>UIDeviceFamily</key>
+<array>
+	<!-- iPhone support -->
+	<string>1</string>
+	<!-- iPad support -->
+	<string>2</string>
+</array>]]></InfoAdditions>
+    <!--<Entitlements><![CDATA[
+					<key>get-task-allow</key>
+					<false/>
+				]]>
+	</Entitlements>-->
+    <requestedDisplayResolution excludeDevices="iPad1, iPod4, iPhone4, iPhone4S">high</requestedDisplayResolution>
+  </iPhone>
+  <initialWindow>
+    <title>AtomicPlus</title>
+    <content>AtomicPlus.swf</content>
+    <visible>true</visible>
+    <fullScreen>true</fullScreen>
+    <autoOrients>true</autoOrients>
+    <aspectRatio>landscape</aspectRatio>
+    <renderMode>direct</renderMode>
+    <systemChrome>standard</systemChrome>
+  </initialWindow>
+  <icon>
+    <image48x48>icons/AtomicPlus48.png</image48x48>
+    <image57x57>icons/AtomicPlus57.png</image57x57>
+    <image72x72>icons/AtomicPlus72.png</image72x72>
+    <image76x76>icons/AtomicPlus76.png</image76x76>
+    <image114x114>icons/AtomicPlus114.png</image114x114>
+    <image120x120>icons/AtomicPlus120.png</image120x120>
+    <image144x144>icons/AtomicPlus144.png</image144x144>
+    <image152x152>icons/AtomicPlus152.png</image152x152>
+    <image512x512>icons/AtomicPlus512.png</image512x512>
+    <image16x16>icons/AtomicPlus16.png</image16x16>
+    <image29x29>icons/AtomicPlus29.png</image29x29>
+    <image32x32>icons/AtomicPlus32.png</image32x32>
+    <image36x36>icons/AtomicPlus36.png</image36x36>
+    <image50x50>icons/AtomicPlus50.png</image50x50>
+    <image58x58>icons/AtomicPlus58.png</image58x58>
+    <image100x100>icons/AtomicPlus100.png</image100x100>
+    <image128x128>icons/AtomicPlus128.png</image128x128>
+    <image40x40>icons/AtomicPlus40.png</image40x40>
+    <image80x80>icons/AtomicPlus80.png</image80x80>
+  </icon>
+  <!-- 
+	AIR options:
+	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
+	
+	AIR mobile options:
+	http://help.adobe.com/en_US/air/build/WSfffb011ac560372f-5d0f4f25128cc9cd0cb-7ffe.html
+	
+	iOS icons guidelines:
+	http://developer.apple.com/library/ios/#documentation/userexperience/conceptual/mobilehig/IconsImages/IconsImages.html
+	
+	Android manifest documentation:
+	http://developer.android.com/guide/topics/manifest/manifest-intro.html
+	-->
+  <extensions>
+    <extensionID>com.sticksports.nativeExtensions.SilentSwitch</extensionID>
+    <extensionID>com.milkmangames.extensions.GameCenter</extensionID>
+  </extensions>
+</application>

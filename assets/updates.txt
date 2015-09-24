@@ -1,0 +1,6 @@
+- [Done] adding auto submitting scores
+- [Done] adding link to the ost of the game
+- [Done] testing the new manual mode when pressing the two sides of screen change direction
+- [Done] Show local best score so far
+- [Working] making game faster on iOS
+- making game work on Android
